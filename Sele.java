@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,8 +9,9 @@ import java.util.List;
 import java.util.Set;
 
 public class Sele {
-    public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jyoti\\Downloads\\chromedriver.exe");
+    public static void main(String[] args) throws InterruptedException{
+
+    WebDriverManager.chromedriver().setup();
 //        WebDriver driver = new ChromeDriver();
         WebDriver driver = new ChromeDriver();
         //  driver.navigate().to("https://opensource-demo.orangehrmlive.com");
@@ -89,7 +91,7 @@ public class Sele {
         driver.findElement(By.id("finish")).click();
         driver.findElement(By.id("back-to-products")).click();
 
-        //Thread.sleep(6000);
+        Thread.sleep(6000);
       //  driver.quit();
     }
 }
