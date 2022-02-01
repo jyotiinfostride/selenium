@@ -1,24 +1,24 @@
-//import org.apache.poi.xssf.usermodel.XSSFSheet;
-//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-//import org.openqa.selenium.WebDriver;
-//
-//import java.io.FileInputStream;
-//import java.io.IOException;
-//
-//public class Data_Driven {
-//    String path,pathdriver;
-//    WebDriver driver;
-//    public void Read_Data() throws IOException
-//    {
-//
-//
-////		pathdriver=System.getProperty("user.dir")+"//Driver/chrome//path=System.getProperty("user.dir")+"/SELENIUM_Demo/src/Driver/chromedriver.exe";
-		System.out.println("pathdriver");
-		//Step 1
-		System.setProperty("webdriver.chrome.driver", pathdriver);
-		driver= new ChromeDriver();
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
 
-        step1 Giving the path of the xlsx file
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Data_Driven {
+    String path,pathdriver;
+    WebDriver driver;
+    public void Read_Data() throws IOException
+    {
+
+//
+//		pathdriver=System.getProperty("user.dir")+"//Driver/chrome//path=System.getProperty("user.dir")+"/SELENIUM_Demo/src/Driver/chromedriver.exe";
+//		System.out.println("pathdriver");
+//		//Step 1
+//		System.setProperty("webdriver.chrome.driver", pathdriver);
+//		driver= new ChromeDriver();
+
+//        step1 Giving the path of the xlsx file
         path = System.getProperty("user.dir")+"\\TestData\\Test_Data.xlsx";
         System.out.println(path);
         //path=System.getProperty("user.dir")+"//SELENIUM_Demo//Driver/chromedriver.exe";
