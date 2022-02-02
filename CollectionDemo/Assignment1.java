@@ -3,7 +3,7 @@ package CollectionDemo;
 
 import java.util.ArrayList;
 
-public class Assignment1{
+public class Assignment1 {
     //	void collectData() throws IOException {
 
         public static void main(String args[]) {
@@ -25,4 +25,4 @@ public class Assignment1{
 
     }
 
-}
+
